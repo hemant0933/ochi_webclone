@@ -8,6 +8,7 @@ import Features from "./components/Features";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
 import LocomotiveScroll from "locomotive-scroll";
+import DummyComponent from "./components/DummyComponent";
 
 const App = () => {
   const locomotiveScroll = new LocomotiveScroll();
@@ -21,6 +22,7 @@ const App = () => {
       <Features />
       <Cards />
       <Footer />
+      <DummyComponent/>
     </div>
   );
 };

@@ -52,3 +52,19 @@ body::-webkit-scrollbar-thumb:hover {
 .underline:hover::before {
   transform: scaleX(0);
 }
+
+.cylinder {
+  width: 40px;
+  height: 400px;
+  background-color: #159;
+  border-radius: 50% / 0 0 100% 100%;
+  /* margin: 1em; */
+  position: absolute;
+  top: 70px;
+  text-align: center;
+  line-height: 200px;
+  background: white;
+  font-size: 2em;
+  transform: rotate(180deg);
+  box-shadow: 0 0 5px black, inset 0 0 5px #48a;
+}
