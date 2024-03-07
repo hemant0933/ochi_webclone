@@ -20,7 +20,7 @@ const Navbar = () => {
   }, [controls, hideOnScroll]);
   return (
     <motion.div
-      className="fixed z-[999] w-full px-20 py-4 font-['Neue Montreal'] flex justify-between bg-transparent bg-opacity-50 backdrop-filter backdrop-blur-lg transition-all duration-300"
+      className="fixed z-[999] w-full text-zinc-100 px-20 py-4 font-['Neue Montreal'] flex justify-between bg-transparent/50 bg-opacity-50 backdrop-filter backdrop-blur-lg transition-all duration-300"
       initial="hidden"
       animate={controls}
       variants={{

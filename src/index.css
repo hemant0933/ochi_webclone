@@ -10,7 +10,7 @@ body::-webkit-scrollbar-track {
   background: #dad8d8;
 }
 body::-webkit-scrollbar-thumb {
-  background: #1a1a1a; 
+  background: #1a1a1a;
 }
 body::-webkit-scrollbar-thumb:hover {
   background: #373737;
@@ -56,9 +56,8 @@ body::-webkit-scrollbar-thumb:hover {
 .cylinder {
   width: 40px;
   height: 400px;
-  background-color: #159;
+  /* background-color: #159; */
   border-radius: 50% / 0 0 100% 100%;
-  /* margin: 1em; */
   position: absolute;
   top: 70px;
   text-align: center;
@@ -67,4 +66,73 @@ body::-webkit-scrollbar-thumb:hover {
   font-size: 2em;
   transform: rotate(180deg);
   box-shadow: 0 0 5px black, inset 0 0 5px #48a;
+}
+
+.hvr-sweep-to-top {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-top:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.hvr-sweep-to-top:hover,
+.hvr-sweep-to-top:focus,
+.hvr-sweep-to-top:active {
+  color: white;
+}
+.hvr-sweep-to-top:hover:before,
+.hvr-sweep-to-top:focus:before,
+.hvr-sweep-to-top:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.hvr-underline {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+}
+
+.hvr-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hvr-underline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }

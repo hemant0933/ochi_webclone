@@ -29,8 +29,12 @@ const Cards = () => {
   }, [controls, top, right, inView]);
 
   return (
-    <div className="w-full h-screen bg-zinc-900 flex items-center px-32 gap-5">
-      <div className="cardContainer h-[50vh] w-1/2">
+    <div
+      className="w-full h-[100vh] bg-zinc-900 flex items-center justify-center px-32 gap-5"
+    >
+      <div
+        className="cardContainer h-[50vh] w-1/2"
+      >
         <motion.div
           ref={ref}
           initial={{ opacity: 0, x: -100 }}
@@ -47,7 +51,9 @@ const Cards = () => {
           </button>
         </motion.div>
       </div>
-      <div className="cardContainer flex gap-5 w-1/2 h-[50vh]">
+      <div
+        className="cardContainer flex gap-5 w-1/2 h-[50vh]"
+      >
         <motion.div
           ref={ref}
           initial={{ opacity: 0, y: -100 }}

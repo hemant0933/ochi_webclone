@@ -8,11 +8,7 @@ const Features = () => {
   const [bottomleftHover, setBottomLefthovering] = useState(false);
 
   return (
-    <div
-      data-scroll
-      data-scroll-section
-      className="w-full bg-zinc-500 relative py-20"
-    >
+    <div className="w-full bg-zinc-500 relative py-20">
       <div className="w-full px-20 border-b-[1px] border-zinc-100 pb-12">
         <h1 className="text-7xl font-['Neue Montreal'] font-light tracking-normal">
           Featured projects
