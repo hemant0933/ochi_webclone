@@ -19,8 +19,8 @@ const Eyes = () => {
       // Calculate the distance from the center
       let distanceX = deltaX / (window.innerWidth / 2);
       let distanceY = deltaY / (window.innerHeight / 2);
-      setTranslateX(distanceX * 10);
-      setTranslateY(distanceY * 10);
+      setTranslateX(distanceX * 13);
+      setTranslateY(distanceY * 13);
     });
   }, []);
   return (
@@ -33,7 +33,7 @@ const Eyes = () => {
         <div className="absolute flex items-center justify-center gap-10 w-1/2 h-96 top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]">
           <div className="w-[15vw] h-[15vw] flex items-center justify-center rounded-full bg-zinc-100">
             <div
-              className="relative w-24 h-24 rounded-full bg-zinc-900"
+              className="relative w-28 h-28 rounded-full bg-zinc-900"
               style={{
                 transform: `translate(${translateX}px, ${translateY}px)`,
                 transition: "transition 0.5s",
@@ -51,7 +51,7 @@ const Eyes = () => {
           </div>
           <div className="w-[15vw] h-[15vw] flex items-center justify-center rounded-full bg-zinc-100">
             <div
-              className="relative w-24 h-24 rounded-full bg-zinc-900"
+              className="relative w-28 h-28 rounded-full bg-zinc-900"
               style={{
                 transform: `translate(${translateX}px, ${translateY}px)`,
                 transition: "transition 0.5s",

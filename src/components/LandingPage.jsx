@@ -45,11 +45,14 @@ const LandingPage = () => {
           </p>
         ))}
 
-        <div className="start flex items-center gap-5">
-          <div className="px-5 py-2 uppercase border-[2px] border-zinc-500 font-light text-md rounded-full">
+        <div className="group start flex items-center gap-5">
+          <button
+            className="px-5 py-2 uppercase border-[2px] border-zinc-500 font-light 
+          text-md rounded-full group-hover:bg-zinc-100 group-hover:text-black group-hover:opacity-100 group-hover:transition-all group-hover:ease-in-out group-hover:duration-1000"
+          >
             start the project
-          </div>
-          <div className="w-10 h-10 border-[2px] flex justify-center items-center border-zinc-500 rounded-full">
+          </button>
+          <div className="w-10 h-10 border-[2px] flex justify-center items-center border-zinc-500 rounded-full group-hover:bg-zinc-100 group-hover:text-black group-hover:opacity-100 group-hover:transition-all group-hover:ease-in-out group-hover:duration-1000">
             <span className="rotate-45">
               <FaArrowUp />
             </span>
